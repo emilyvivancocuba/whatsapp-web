@@ -1,0 +1,45 @@
+.container {
+    padding:0px;
+}
+
+@media screen and (max-width:760px) {
+    aside.w-contacts {
+        display: none;
+    }
+}
+
+@media(min-width:1300px) {
+    .container {
+        width: 1321px;
+        padding:0px;
+    }
+}
+
+@media screen and (min-width: 1320px){
+	.main {
+	    width: 1212px;
+	}
+@media screen and (min-width: 1200px){
+	.main {
+	    width: 1118px;
+	}
+	.main {
+	    height: calc(100% - 38px);
+	    position: relative;
+	    margin: 0 auto;
+	    top: 19px;
+	    border-radius: 3px;
+	    overflow: hidden;
+	    -webkit-transform-origin: center;
+	    transform-origin: center;
+	    -webkit-animation: app-enter .3s;
+	    animation: app-enter .3s;
+	    background-position: top left;
+	    background-repeat: REPEAT-X;
+	    background-color: #FFFFFF;
+	    display: flex;
+	}
+@media screen and (max-height: 500px){
+	.main {
+	    min-height: 500px;
+	}
