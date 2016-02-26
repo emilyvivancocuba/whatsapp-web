@@ -2,9 +2,9 @@
     font-family: 'whatsapp-icons';
     src:    url('../fonts/icomoon.eot?7slujz');
     src:    url('../fonts/icomoon.eot?7slujz#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?7slujz') format('truetype'),
-        url('../fonts/icomoon.woff?7slujz') format('woff'),
-        url('../fonts/icomoon.svg?7slujz#icomoon') format('svg');
+            url('../fonts/icomoon.ttf?7slujz') format('truetype'),
+            url('../fonts/icomoon.woff?7slujz') format('woff'),
+            url('../fonts/icomoon.svg?7slujz#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -45,4 +45,3 @@
 .icon-search:before {
 	content: "\e906"
 }
-

@@ -4,8 +4,14 @@ body{
 	padding: 0;
 	background-color: #D8DBD5;
 }
-a{
-	text-decoration: none;
+a {
+  text-decoration: none;
+  color: none;
+}
+a:hover,
+a:focus {
+  color: none;
+  text-decoration: none;
 }
 .txt-center{
 	text-align: center;
@@ -22,18 +28,23 @@ a{
 .pull-left{
 	float: left;
 }
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4{
+    padding-right: 0px;
+}
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8{
+    padding-left: 0px;
+}
 .green0{
 	background-color: #DCF8C6;
 }
 .bg-white{
 	background-color: white;
-}
-img{
-	width: 49px;
-	border-radius: 100px;
-}
-.img-top{
-	width: 40px;
 }
 .greenbar-top{
 	background-color: #009688;
@@ -44,9 +55,55 @@ img{
 	z-index: -1;
 	position: fixed;
 }
+.main {
+	height: calc(100% - 38px);
+	position: relative;
+	margin: 0 auto;
+	top: 19px;
+	border-radius: 3px;
+	overflow: hidden;
+	background-color: transparent;
+	display: flex;
+	box-shadow: 0px 1px 7px gray;
+}
 header{
 	background-color: #EEE;
+	padding: 10px 15px;
+	border-bottom: 1px solid #DEDEDE;
 }
-.main{
-	
+.izquierda{
+	border-right: 1px solid #DEDEDE;
+}
+header span{
+	float: right;
+}
+.ico-mg{
+	margin-right: 10px;
+}
+.item{
+	position: relative;
+	padding: 8px;
+	cursor: pointer;
+	display: inline-block;
+}
+.item a{
+	color: #777;
+	font-size: 21px;
+}
+
+
+
+img{
+	width: 49px;
+	height: 49px;
+	border-radius: 100px;
+}
+.img-top{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.scrollbar{
+	width: 6px;
+	background-color: rgba(0,0,0,0.2);
 }
