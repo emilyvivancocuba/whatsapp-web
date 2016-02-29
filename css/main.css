@@ -181,6 +181,7 @@ img{
 {
 	float: right;
 	color: #7F7F7F;
+	cursor: default;
 }
 .hora{
 	font-size: 13px;
