@@ -85,13 +85,22 @@ header{
 }
 .item{
 	position: relative;
-	padding: 8px;
+	padding-top: 8px;
 	cursor: pointer;
 	display: inline-block;
+	border-radius: 100%;
+}
+.item a:focus,
+.item a:hover,
+.icons i:focus,
+.icons i:hover{
+	background-color: #D7D7D7;
 }
 .item a{
 	color: #777;
 	font-size: 21px;
+	border-radius: 100%;
+	padding: 8px;
 }
 img{
 	width: 49px;
@@ -242,11 +251,14 @@ footer{
 .icons{
 	margin: 9px 7px 0px 14px;
 	display: inline-block;
+	border-radius: 100%;
 }
 .icon-foot{
 	color: #AAA9A7;
 	font-size: 28px;
 	cursor: pointer;
+	border-radius: 100%;
+	padding: 3px;
 }
 .msg-aqui{
 	background-color: white;
