@@ -165,9 +165,9 @@ img{
 }
 .contactos{
 	background-color: white;
-	padding: 10px 0px 10px 15px;
+	padding: 14px 0px 10px 15px;
 	border-top: 1px solid #DEDEDE;
-	height: 65px;
+	height: 75px;
 }
 .contact-zone{
 	height: calc(100vh - 162px);
