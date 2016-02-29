@@ -22,26 +22,26 @@ a:focus {
 .txt-right{
 	text-align: right;
 }
-.pull-right{
+.f-right{
 	float: right;
 }
-.pull-left{
+.f-left{
 	float: left;
 }
-.col-xs-4,
-.col-sm-4,
-.col-md-4,
-.col-lg-4{
-    padding-right: 0px;
+.w-100{
+	width: 100%;
 }
-.col-xs-8,
-.col-sm-8,
-.col-md-8,
-.col-lg-8{
+.col-4,
+.col-8{
+    padding-right: 0px;
     padding-left: 0px;
 }
-.green0{
-	background-color: #DCF8C6;
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
 }
 .bg-white{
 	background-color: white;
@@ -56,26 +56,29 @@ a:focus {
 	position: fixed;
 }
 .main {
-	height: calc(100% - 38px);
+	height: calc(100vh - 38px);
 	position: relative;
-	margin: 0 auto;
+	margin: 0px auto;
 	top: 19px;
 	border-radius: 3px;
 	overflow: hidden;
 	background-color: transparent;
 	display: flex;
 	box-shadow: 0px 1px 7px gray;
+	border: 1px solid #DEDEDE;
 }
 header{
 	background-color: #EEE;
 	padding: 10px 15px;
 	border-bottom: 1px solid #DEDEDE;
+	height: 60px;
 }
-.izquierda{
+.bord-right{
 	border-right: 1px solid #DEDEDE;
 }
-header span{
+.iconos{
 	float: right;
+	z-index: 10;
 }
 .ico-mg{
 	margin-right: 10px;
@@ -90,20 +93,191 @@ header span{
 	color: #777;
 	font-size: 21px;
 }
-
-
-
 img{
 	width: 49px;
 	height: 49px;
-	border-radius: 100px;
+	border-radius: 100%;
 }
 .img-top{
 	width: 40px;
 	height: 40px;
 	cursor: pointer;
 }
+.principal{
+	margin-right: 14px;
+}
 .scrollbar{
 	width: 6px;
 	background-color: rgba(0,0,0,0.2);
+}
+.chat-body,
+.chat-body-2{
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+}
+.chat-body-2{
+	width: calc(100% - 65px);
+}
+.chat-title{
+	font-size: 16px;
+}
+.chat-title-2{
+	font-size: 15px;
+	display: block;
+}
+.chat-estado{
+	color: #606060;
+	font-size: 14px;
+}
+.ellipsify{
+	overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.search{
+	padding-top: 14px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #DEDEDE;
+}
+.barra-buscadora{
+	border-radius: 5px;
+	border: 1px solid #EDEDED;
+	margin: 0px 14px;
+}
+.new-chat{
+	background-color: transparent;
+	padding: 0px 14px;
+	font-size: 15px;
+	border-radius: 10px;
+	border: none;
+	margin: 7px;
+	margin-left: 28px;
+	width: calc(100% - 35px);
+	outline: none;
+}
+.lupa{
+	position: absolute;
+	margin-top: 7px;
+	margin-left: 14px;
+	color: #CBCBCB;
+	cursor: pointer;
+}
+.contactos{
+	background-color: white;
+	padding: 10px 0px 10px 15px;
+	border-top: 1px solid #DEDEDE;
+	height: 65px;
+}
+.contact-zone{
+	height: calc(100vh - 162px);
+	overflow-y: scroll;
+}
+.msg{
+	color: #827F7F;
+}
+.hora,
+.hora-2
+{
+	float: right;
+	color: #7F7F7F;
+}
+.hora{
+	font-size: 13px;
+}
+.hora-2{
+	font-size: 11px;
+}
+.bg-panel{
+	background-color: #EDE9E4;
+	background-image: url(../image/chat-panel-bg.png);
+	background-repeat: repeat;
+	background-position: left;
+	width: 100%;
+	padding: 35px;
+	height: calc(100vh - 159px);
+	overflow-y: scroll;
+}
+.mensajes{
+	border-radius: 5px;
+	padding: 7px 14px;
+	max-width: 336px;
+	margin-bottom: 3px;
+	display: block;
+	position: relative;
+}
+.msg-left{
+	float: left;
+	clear: both;
+	background-color: white;
+}
+.msg-right{
+	float: right;
+	clear: both;
+	background-color: #DCF8C6;
+}
+.name-contact{
+	padding-bottom: 7px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.name-contact:hover{
+	text-decoration: underline;
+}
+.msg-contact{
+	color: #676767;
+	font-size: 13px;
+}
+footer{
+	background-color: #EEE;
+	border-bottom: 1px solid #DEDEDE;
+	border-top: 1px solid #DEDEDE;
+	height: 80px;
+}
+.icons{
+	margin: 9px 7px 0px 14px;
+	display: inline-block;
+}
+.icon-foot{
+	color: #AAA9A7;
+	font-size: 28px;
+	cursor: pointer;
+}
+.msg-aqui{
+	background-color: white;
+	padding: 7px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+	width: calc(100% - 120px);
+	outline: none;
+}
+/*COLORES NOMBRE CONTACTOS*/
+.skyblue{
+	color: #6BCBEF;
+}
+.fucsia{
+	color: #E542B7;
+}
+.verde{
+	color: #8DCD96;
+}
+.mostaza{
+	color: #E0B610;
+}
+
+/*SCROLL*/
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+::-webkit-scrollbar-track-piece{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+::-webkit-scrollbar-button{
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #CBCBCB;
 }
